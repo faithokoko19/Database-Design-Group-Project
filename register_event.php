@@ -7,7 +7,7 @@ if (!isset($_POST['event_id'])) {
 $event_id = $_POST['event_id'];
 
 // Connect to the database
-@$db = new mysqli('localhost', 'root', 'Faysudi@1', 'events');
+@$db = new mysqli('localhost', 'root', 'password', 'events');
 
 if (mysqli_connect_errno()) {
     echo "<p>Error: Could not connect to database.<br/>
